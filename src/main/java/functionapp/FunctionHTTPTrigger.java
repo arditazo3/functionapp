@@ -13,8 +13,9 @@ import java.util.Optional;
 
 /**
  * Azure Functions with HTTP Trigger.
+ * @author ardit
  */
-public class Function {
+public class FunctionHTTPTrigger {
     /**
      * This function listens at endpoint "/api/HttpExample". Two ways to invoke it using "curl" command in bash:
      * 1. curl -d "HTTP Body" {your host}/api/HttpExample

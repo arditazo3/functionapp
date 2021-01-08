@@ -14,9 +14,9 @@ import static org.mockito.Mockito.*;
 
 
 /**
- * Unit test for Function class.
+ * Unit test for FunctionHTTPTrigger class.
  */
-public class FunctionTest {
+public class FunctionHTTPTriggerTest {
     /**
      * Unit test for HttpTriggerJava method.
      */
@@ -45,7 +45,7 @@ public class FunctionTest {
         doReturn(Logger.getGlobal()).when(context).getLogger();
 
         // Invoke
-        final HttpResponseMessage ret = new Function().run(req, context);
+        final HttpResponseMessage ret = new FunctionHTTPTrigger().run(req, context);
 
         // Verify
         assertEquals(ret.getStatus(), HttpStatus.OK);
